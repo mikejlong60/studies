@@ -28,4 +28,3 @@ func TestUseValueOnly(t *testing.T) {
 		fmt.Printf("%d\n", value)
 	}
 }
-

@@ -25,18 +25,17 @@ func TestSliceExercise(t *testing.T) {
 
 }
 
-
 func Pic(dx, dy int) [][]uint8 {
 	fmt.Printf("dude 1: %d %d\n", dx, dy)
 	xaxis := make([]uint8, dx, dx)
-	for i := 0; i < dx ; i++ {
-		xval :=  uint8(dx ^ dy) //uint8(i * dy)//dx ^ dy)//(dx+dy)/2)//uint8(i)
+	for i := 0; i < dx; i++ {
+		xval := uint8(dx ^ dy) //uint8(i * dy)//dx ^ dy)//(dx+dy)/2)//uint8(i)
 		fmt.Printf("dude 2: %d\n", i)
 		fmt.Printf("dude 21: %d\n", xval)
 		xaxis[i] = xval // uint8(i * dy)//dx ^ dy)//(dx+dy)/2)//uint8(i)
 	}
 
-	result := make([][]uint8,dy, dy)
+	result := make([][]uint8, dy, dy)
 	for i := 0; i < dy; i++ {
 		result[i] = xaxis
 	}
@@ -47,4 +46,3 @@ func Pic(dx, dy int) [][]uint8 {
 func TestPic(t *testing.T) {
 	pic.Show(Pic)
 }
-

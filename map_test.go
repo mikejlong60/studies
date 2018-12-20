@@ -13,10 +13,10 @@ func TestLookupTheValueInTheMap(t *testing.T) {
 
 	m = make(map[string]Vertex2)
 
-	m["Bell Labs"] = Vertex2{ 40.123, -76.23141}
+	m["Bell Labs"] = Vertex2{40.123, -76.23141}
 
 	actual := m["Bell Labs"]
-	expected := Vertex2{ 40.123, -76.23141}
+	expected := Vertex2{40.123, -76.23141}
 
 	if actual != expected {
 		t.Errorf("actual %f , expected %f", actual, expected)

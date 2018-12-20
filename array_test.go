@@ -55,7 +55,7 @@ func TestSlicesLiteralsAreArrayLiteralsWithoutLength(t *testing.T) {
 		{5, true},
 		{11, true},
 	}
-	if (len(s) != 4) {
+	if len(s) != 4 {
 		t.Errorf("actual %q, expected %q", len(s), 4)
 	}
 
@@ -102,9 +102,9 @@ func TestMakingSlice(t *testing.T) {
 
 func TestSlicesOfSlices(t *testing.T) {
 	board := [][]string{
-		[]string{"_","_","_"},
-		[]string{"_","_","_"},
-		[]string{"_","_","_"},
+		[]string{"_", "_", "_"},
+		[]string{"_", "_", "_"},
+		[]string{"_", "_", "_"},
 	}
 
 	board[0][0] = "X"
@@ -113,21 +113,18 @@ func TestSlicesOfSlices(t *testing.T) {
 	board[1][0] = "O"
 	board[0][2] = "X"
 
-
-	if len(board) != 3 || board[0][2] != "X"  {
+	if len(board) != 3 || board[0][2] != "X" {
 		t.Errorf("actual %q, expected: 0, 4 ,4", board)
 	}
 }
-
 
 func TestAppendingToSlice(t *testing.T) {
 	var s []int
 	s = append(s, 0)
 	s = append(s, 1)
-	s = append(s, 3,4,5)
+	s = append(s, 3, 4, 5)
 
-
-	if len(s) != 5 || s[1] != 1  {
+	if len(s) != 5 || s[1] != 1 {
 		t.Errorf("actual %q", s)
 	}
 }

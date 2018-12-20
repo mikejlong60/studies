@@ -6,7 +6,7 @@ import "fmt"
 func fibonacci() func() int {
 
 	var fst = 0
-	var snd = 1  
+	var snd = 1
 	return func() int {
 
 		next := fst + snd

@@ -69,9 +69,8 @@ func main() {
 
 	reachStructThroughPointer(234, 123)
 
-	r,e := structLiterals(2,1)
+	r, e := structLiterals(2, 1)
 	fmt.Println(r, e)
-
 
 }
 

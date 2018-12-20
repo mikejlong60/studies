@@ -27,7 +27,6 @@ func TestStructAccess(t *testing.T) {
 	}
 }
 
-
 func TestStructAccessWithPointerSyntax(t *testing.T) {
 	v := Vertex{1, 2}
 	p := &v

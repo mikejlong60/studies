@@ -9,7 +9,7 @@ func WordCount(s string) map[string]int {
 	fields := strings.Fields(s)
 
 	m := make(map[string]int)
-	
+
 	for i := range fields {
 		word := m[fields[i]] + 1
 		m[fields[i]] = word
@@ -20,4 +20,3 @@ func WordCount(s string) map[string]int {
 func main() {
 	wc.Test(WordCount)
 }
-
