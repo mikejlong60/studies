@@ -4,7 +4,7 @@ import "fmt"
 
 type Person struct {
 	Name string
-	Age int
+	Age  int
 }
 
 func (p Person) String() string {
@@ -16,4 +16,3 @@ func main() {
 	z := Person{"Zach efron", 32}
 	fmt.Println(a, z)
 }
-
