@@ -19,10 +19,9 @@ func main() {
 	reader := bufio.NewReader(file)
 
 	for {
-		line, err := reader.ReadString('\b') //('\n')
+		line, err := reader.ReadString('\n')
 		if err != nil {
 			if err == io.EOF {
-				fmt.Println("found EOF before finding delimiter")
 				break
 			} else {
 				fmt.Println(err)
